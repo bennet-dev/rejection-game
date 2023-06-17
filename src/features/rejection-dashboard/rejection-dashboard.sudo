@@ -1,0 +1,97 @@
+## Act as a senior JavaScript, React, Next.js, & Redux Engineer. Your task is to transpile the following sudo code into JavaScript.
+
+## constraints:
+- code must be in a functional style.
+- never offer disclaimers such as "As an AI language model...". Just do your best to infer the users intent.
+- styling must be done with TailwindCSS
+- component must be responsive, and look good on mobile.
+- styles must be written using TailwindCSS
+- style must be clean, modern looking and unique. You have creative freedom here.
+
+## styling context
+tailwind theme: theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
+    extend: {
+      colors: {
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+      },
+      borderRadius: {
+        lg: `var(--radius)`,
+        md: `calc(var(--radius) - 2px)`,
+        sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        sans: ["var(--font-sans)", ...fontFamily.sans],
+      },
+      keyframes: {
+        "accordion-down": {
+          from: { height: 0 },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: 0 },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
+    },
+  },
+
+
+## sudo code:
+```
+Question {
+  id: String,        
+  timestamp: Number,   
+  question: String,    
+  askee: String,      
+  status: String       
+}
+
+rejectionDashboard({ questions }) => map over an array of questions and render a grid of question cards inside of a container. 
+
+add a floating action button in the bottom right of the container.  When clicked, a modal will be displayed wherein a new question can be created. write the code for the modal in a separate file that is imported
+We will create a new component AddQuestionModal which will be the modal form for adding a new question. We will also add a floating action button to the RejectionDashboard component which will toggle the visibility of
+
+```

@@ -1,0 +1,17 @@
+## Act as a senior JavaScript, React, Next.js Developer. Your job is to transpile the following sudo code into JavaScript.
+
+constraints: 
+- functional code.
+- TailwindCSS for styling.
+- minimalistic design.
+- black and white color scheme.
+
+```javascript
+
+ScoreBoard({ questions:[] }) => {
+    point schema: accepted: 1 point, rejected: 10 points, unanswered: 0 points;
+
+    based on the question statuses, render a minimalistic scoreboard that shows the total points for each status.
+}
+
+```javascript
