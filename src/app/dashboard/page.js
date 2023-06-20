@@ -1,6 +1,6 @@
 "use client"
 
-import RejectionDashboard from "@/features/rejection-dashboard/rejection-dashboard";
+import RejectionDashboard from "@/features/rejection-dashboard";
 
 const DashboardPage = () => {
     return <>

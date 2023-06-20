@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { selectQuestions } from '@/features/rejection-dashboard/slice/rejection-slice';
 
-const ScoreBoard = ({ children }) => {
+const ScoreBoard = () => {
     const questions = useSelector(selectQuestions);
 
     // Define the point schema

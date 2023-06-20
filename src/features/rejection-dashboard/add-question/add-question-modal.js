@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { createQuestion } from './slice/rejection-slice';
+import { createQuestion } from '../slice/rejection-slice';
 
 const AddQuestionModal = () => {
     const dispatch = useDispatch();
@@ -16,7 +16,7 @@ const AddQuestionModal = () => {
     return (
         <div >
             <div >
-                <h2 className="text-xl font-semibold mb-4 text-popover-foreground">Add a new question</h2>
+                <h2 className="title text-xl font-semibold mb-4 text-popover-foreground">Add a new question</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
                         <label htmlFor="question" className="block text-sm text-muted mb-2">Question:</label>

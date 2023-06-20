@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectQuestion, updateQuestion, deleteQuestion } from './slice/rejection-slice';
+import { selectQuestion, updateQuestion, deleteQuestion } from '../slice/rejection-slice';
 import { Button } from '@/components/ui/button';
 
 const EditQuestionModal = ({ id }) => {
@@ -30,7 +30,7 @@ const EditQuestionModal = ({ id }) => {
 
     return (
         <div>
-            <h2 className="text-xl font-semibold mb-4 text-popover-foreground">Edit question</h2>
+            <h2 className="title text-xl font-semibold mb-4 text-popover-foreground">Edit question</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-4">
                     <label htmlFor="question" className="block text-sm text-muted mb-2">Question:</label>
